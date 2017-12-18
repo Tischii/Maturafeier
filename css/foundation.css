@@ -118,7 +118,8 @@ a {
      */
 a:active,
 a:hover {
-  outline-width: 0; }
+  outline-width: 0;
+  color: #52CBD8;}
 
 /* Text-level semantics
        ========================================================================== */
@@ -3503,10 +3504,10 @@ select {
       text-align: center; }
   .menu .is-active > a {
     background: #1779ba;
-    color: #fefefe; }
+    color: #52CBD8; }
   .menu .active > a {
     background: #1779ba;
-    color: #fefefe; }
+    color: #52CBD8; }
   .menu.align-left {
     -ms-flex-pack: start;
         justify-content: flex-start; }
