@@ -174,8 +174,7 @@ body:before {
       text-decoration-color: white;
     }
 .row.content {height:50em; }
-
-
+    
 
 </style>
 
