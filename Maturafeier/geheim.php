@@ -12,4 +12,18 @@ $benutzer = $_SESSION['benutzer'];
 echo "Benutzername des angemeldeten Users: ".$benutzer;
 ?>
 
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Anmeldung</title>
+</head>
+<body>
+<br>
 <a href="logout.php">Logout</a>
+<form>
+    <label>Anzahl der Personen</label>
+    <input type="number" required>
+    <input type="submit" value="Senden">
+</form>
+</body>
+</html>

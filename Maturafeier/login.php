@@ -1,37 +1,40 @@
-<?php 
+<?php
 session_start();
+$errorMessage= '';
 $pdo = new PDO('mysql:host=localhost;dbname=itp_mtf18', 'root', '');
- 
+
 if(isset($_GET['login'])) {
  $benutzer = $_POST['benutzer'];
  $passwort = $_POST['passwort'];
- 
+
  $statement = $pdo->prepare("SELECT * FROM user WHERE benutzer = :benutzer");
  $result = $statement->execute(array('benutzer' => $benutzer));
  $user = $statement->fetch();
- 
+
  //Überprüfung des Passworts
  if ($user !== false && password_verify($passwort, $user['passwort'])) {
  $_SESSION['userid'] = $user['id'];
  $_SESSION['benutzer'] = $user['benutzer'];
  header('Location: geheim.php');
  } else {
-    $errorMessage = "E-Mail oder Passwort war ungültig<br>";
+     if($benutzer != null) {
+         $errorMessage = "Benutzer war ungültig<br>";
+     }
+     elseif ($passwort != null && password_verify($passwort, $user['passwort']) == false){
+         $errorMessage = "Passwort war ungültig<br>";
+     }
+     elseif ($passwort == null || $benutzer == null){
+         $errorMessage = "Felder müssen ausgefüllt werden<br>";
+     }
  }
 }
 ?>
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html> 
 <head>
   <title>Login</title> 
 </head> 
 <body>
- 
-<?php 
-if(isset($errorMessage)) {
- echo $errorMessage;
-}
-?>
 
 <!DOCTYPE html>
 <style>
@@ -215,6 +218,13 @@ body:before {
   <form class="login-form" action="?login=1" method="post">
     <input type="text" placeholder="username" name="benutzer"/>
     <input type="password" placeholder="password" name="passwort"/>
+      <span>
+          <?php
+              if(isset($errorMessage)) {
+                  echo $errorMessage.'<br>';
+              }
+          ?>
+      </span>
     <input class="button-form" type="submit" value="Abschicken">
   </form>
 </div>
