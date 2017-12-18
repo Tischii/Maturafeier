@@ -18,16 +18,17 @@ if(isset($_GET['login'])) {
  header('Location: geheim.php');
  } else {
      if($benutzer != null) {
-         $errorMessage = "Benutzer war ungültig<br>";
+         $errorMessage = "Benutzer ist ungültig<br>";
      }
      elseif ($passwort != null && password_verify($passwort, $user['passwort']) == false){
-         $errorMessage = "Passwort war ungültig<br>";
+         $errorMessage = "Passwort ist ungültig<br>";
      }
      elseif ($passwort == null || $benutzer == null){
          $errorMessage = "Felder müssen ausgefüllt werden<br>";
      }
  }
 }
+
 ?>
 <!DOCTYPE html>
 <html> 
