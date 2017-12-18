@@ -219,13 +219,13 @@ body:before {
   <form class="login-form" action="?login=1" method="post">
     <input type="text" placeholder="username" name="benutzer"/>
     <input type="password" placeholder="password" name="passwort"/>
-      <span>
+      <div>
           <?php
               if(isset($errorMessage)) {
-                  echo $errorMessage.'<br>';
+                  echo '<span>'.$errorMessage.'<br></span>';
               }
           ?>
-      </span>
+      </div>
     <input class="button-form" type="submit" value="Abschicken">
   </form>
 </div>
