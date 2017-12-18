@@ -1,6 +1,5 @@
 <?php
 session_start();
-$errorMessage= '';
 $pdo = new PDO('mysql:host=localhost;dbname=itp_mtf18', 'root', '');
 
 if(isset($_GET['login'])) {
