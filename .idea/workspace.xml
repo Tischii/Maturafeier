@@ -2,20 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9e0d8c0f-8aa0-4c11-b9f0-05b961c73f52" name="Default" comment="test-push-branch">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Maturafeier/Fotos.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Maturafeier/Home.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Maturafeier/Info.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Maturafeier/Login.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Maturafeier/geheim.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Maturafeier/img/home.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Maturafeier/img/home.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Maturafeier/img/home.psd" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Maturafeier/img/homeBLUR.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Maturafeier/img/logo_white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Maturafeier/img/placeholder.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Maturafeier/js/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Maturafeier/login.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Maturafeier/logout.php" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -29,11 +16,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="83" column="7" lean-forward="true" selection-start-line="83" selection-start-column="7" selection-end-line="83" selection-end-column="7" />
+            <state relative-caret-position="451">
+              <caret line="136" column="34" lean-forward="false" selection-start-line="136" selection-start-column="34" selection-end-line="136" selection-end-column="34" />
               <folding>
                 <element signature="e#2943#2949#0" expanded="true" />
               </folding>
@@ -41,11 +28,33 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="info.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/info.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="689">
+              <caret line="126" column="47" lean-forward="true" selection-start-line="126" selection-start-column="47" selection-end-line="126" selection-end-column="47" />
+              <folding>
+                <element signature="e#3334#3340#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/app.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="foundation.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/foundation.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="5135" column="33" lean-forward="false" selection-start-line="5135" selection-start-column="33" selection-end-line="5135" selection-end-column="33" />
+            <state relative-caret-position="340">
+              <caret line="121" column="17" lean-forward="false" selection-start-line="121" selection-start-column="17" selection-end-line="121" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -73,6 +82,9 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>#E6E6E6</find>
+      <find>active</find>
+      <find>a</find>
+      <find>a:active</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -105,8 +117,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Maturafeier/index.html" />
-        <option value="$PROJECT_DIR$/css/foundation.css" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/css/foundation.css" />
+        <option value="$PROJECT_DIR$/info.html" />
       </list>
     </option>
   </component>
@@ -116,7 +129,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-7" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
@@ -148,17 +161,6 @@
               <item name="maturafeier-htl3r" type="b2602c69:ProjectViewProjectNode" />
               <item name="maturafeier-htl3r" type="462c0819:PsiDirectoryNode" />
               <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="maturafeier-htl3r" type="b2602c69:ProjectViewProjectNode" />
-              <item name="maturafeier-htl3r" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="maturafeier-htl3r" type="b2602c69:ProjectViewProjectNode" />
-              <item name="maturafeier-htl3r" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -204,7 +206,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1513595808468</updated>
-      <workItem from="1513595809815" duration="11400000" />
+      <workItem from="1513595809815" duration="12758000" />
     </task>
     <task id="LOCAL-00001" summary="test-push">
       <created>1513595888152</created>
@@ -234,17 +236,23 @@
       <option name="project" value="LOCAL" />
       <updated>1513607864044</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="info hinzugefügt">
+      <created>1513609381385</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1513609381385</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11400000" />
+    <option name="totallyTimeSpent" value="12758000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="974" height="1047" extended-state="0" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2223382" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1109375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979852" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -272,7 +280,8 @@
     <MESSAGE value="test-push" />
     <MESSAGE value="test-push-branch" />
     <MESSAGE value="redesign: Startseite" />
-    <option name="LAST_COMMIT_MESSAGE" value="redesign: Startseite" />
+    <MESSAGE value="info hinzugefügt" />
+    <option name="LAST_COMMIT_MESSAGE" value="info hinzugefügt" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -295,20 +304,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/css/app.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/css/foundation.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="5135" column="33" lean-forward="false" selection-start-line="5135" selection-start-column="33" selection-end-line="5135" selection-end-column="33" />
+        <state relative-caret-position="340">
+          <caret line="121" column="17" lean-forward="false" selection-start-line="121" selection-start-column="17" selection-end-line="121" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="83" column="7" lean-forward="true" selection-start-line="83" selection-start-column="7" selection-end-line="83" selection-end-column="7" />
+        <state relative-caret-position="451">
+          <caret line="136" column="34" lean-forward="false" selection-start-line="136" selection-start-column="34" selection-end-line="136" selection-end-column="34" />
           <folding>
             <element signature="e#2943#2949#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/info.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="689">
+          <caret line="126" column="47" lean-forward="true" selection-start-line="126" selection-start-column="47" selection-end-line="126" selection-end-column="47" />
+          <folding>
+            <element signature="e#3334#3340#0" expanded="true" />
           </folding>
         </state>
       </provider>

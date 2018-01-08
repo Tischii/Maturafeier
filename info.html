@@ -15,19 +15,11 @@
     <style type="text/css">
         *{
             font-family: Roboto;
+            color: #282828;
         }
 
-                .hero-section{
-                    background-image: url("img/background.jpg");
-                    background-size: cover;
-                    display: flex;
-                    align-items: center;
-                    justify-content:center;
-                    background-position:center;
-                    height: 90vh;
-                    background-repeat: no-repeat;
 
-                }
+      
 
                 .top-bar-right{
                     margin-right: 50px;
@@ -73,26 +65,28 @@
                     background-color: #282828;
                 }
 
-                @media only screen and (max-width: 700px) {
-
-                    .header{
-                        font-size: 32pt;
-                    }
-                    .fixed{
-                        height: 13vh;
-                    }
-                    .logo_img{
-                        height: 9vh;
-                    }
-
+               
+                .textblock{
+                    height: 30vh;
+                    padding-top: 10vh;
                 }
 
-                @media only screen and (max-width: 350px) {
-                    .header{
-                        font-size: 24pt;
-                    }
-
+                .heightx{
+                    display: flex !important;
+                    align-items: center;
+                    justify-content: center;
+                    height: 60vh;
                 }
+
+                .datum,.zeit,.ort,.datumtext,.zeittext,.orttext{
+                    text-align: center;
+                }
+
+                .datumtext,.zeittext,.orttext{
+                    font-size: 18pt;
+                }
+                
+
 
 
             </style>
@@ -122,10 +116,38 @@
                 </div>
             </div>
 
-            <section class="hero-section">
-                <h1 class="header"> Information</h1>
-                <p class="text">Lorem ipsum</p>
-            </section>
+            <div class="grid-container">
+                    <div class="textblock">
+                        <h1 class="header"> Information </h1>
+                        <p class="text"> 
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                        </p>
+                    </div>                        
+                
+                
+
+                    <div class="grid-x heightx">
+
+                        <div class="cell large-4">
+                            <h1 class="datum"> Datum </h1>
+                            <p class="datumtext">08.06.2018</p>
+                        </div>
+
+                        <div class="cell large-4">
+                            <h1 class="zeit"> Zeit </h1>
+                            <p class="zeittext"> 18:00</p>
+                        </div>
+
+                        <div class="cell large-4">
+                            <h1 class="ort"> Ort</h1>
+                            <p class="orttext">Babenbergerstra&szlig;e 3, 1230 Wien </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            
 
 
             <script src="js/vendor/jquery.js"></script>
