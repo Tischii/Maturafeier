@@ -15,17 +15,9 @@ echo "Benutzername des angemeldeten Users: ".$benutzer;
 $pdo = new PDO('mysql:host=localhost;dbname=itp_mtf18', 'root', '');
 
 if(isset($_GET['anmeldung'])) {
-    $statement = $pdo->prepare("SELECT * FROM teilnehmer WHERE id = :userid");
-    $result = $statement->execute(array(':userid' => $userid));
-    $anmeldung = $statement->fetch();
-
-    if($anmeldung !== false){
-       
-    }else{
-        $anzahl = $_POST['anzahl'];
-        $sql = "INSERT INTO teilnehmer (id, anzahl) VALUES ($userid, $anzahl)";
-        $pdo->exec($sql);
-    }
+    $anzahl = $_POST['anzahl'];
+    $sql = "INSERT INTO teilnehmer (id, anzahl) VALUES ($userid, $anzahl)";
+    $pdo->exec($sql);
 }
 
 ?>
