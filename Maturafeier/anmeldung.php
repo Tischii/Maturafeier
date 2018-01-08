@@ -20,7 +20,7 @@ if(isset($_GET['anmeldung'])) {
     $anmeldung = $statement->fetch();
 
     if($anmeldung !== false){
-        $info = "Bereits Teilnehmer angegeben";
+       
     }else{
         $anzahl = $_POST['anzahl'];
         $sql = "INSERT INTO teilnehmer (id, anzahl) VALUES ($userid, $anzahl)";
@@ -28,27 +28,31 @@ if(isset($_GET['anmeldung'])) {
     }
 }
 
-
-
 ?>
 
 <!DOCTYPE html>
 <html>
 <head>
     <title>Anmeldung</title>
+    <a href="logout.php">Logout</a>
 </head>
 <body>
-    <br>
-    <a href="logout.php">Logout</a>
-    <form action="?anmeldung=1" method="post">
-        <label>Anzahl der Personen</label>
-        <input type="number" name="anzahl" required>
-        <input type="submit" value="Senden">
-    </form>
     <?php
-    if(isset($info)) {
-        echo '<span>'.$info.'<br></span>';
-    }
+        $statement = $pdo->prepare("SELECT * FROM teilnehmer WHERE id = :userid");
+        $result = $statement->execute(array(':userid' => $userid));
+        $anmeldung = $statement->fetch();
+        if ($anmeldung == false) {
+            include("anmeldefeld.html");
+        }else{
+            $statement = $pdo->prepare("SELECT anzahl FROM teilnehmer WHERE id = :userid");
+            $result = $statement->execute(array(':userid' => $userid));
+            while($row = $statement->fetch()) {
+                $info = $row['anzahl']." Teilnehmer sind bereits angemeldet.";
+            }
+        }
+        if(isset($info)) {
+            echo '<span>'.$info.'<br></span>';
+        }
     ?>
 </body>
 </html>
