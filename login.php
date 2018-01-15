@@ -202,9 +202,9 @@ if(isset($_GET['login'])) {
 
         <div class="top-bar-right" data-magellan  id="resmenu">
           <ul class="vertical medium-horizontal menu">
-            <li><a href="">INFO</a></li>
-            <li><a href="">FOTOS</a></li>
-            <li><a href="">ANMELDUNG</a></li>
+            <li><a href="info.html">INFO</a></li>
+            <li><a href="comingsoon.html">FOTOS</a></li>
+            <li><a href="login.php">ANMELDUNG</a></li>
           </ul>
         </div>
       </div>
