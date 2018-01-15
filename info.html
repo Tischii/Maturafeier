@@ -12,10 +12,20 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Bungee|Pacifico|Sedgwick+Ave+Display" rel="stylesheet">
 
+    <script type="text/javascript">
+         if (screen.width <= 803) {
+            window.location = "mobil_info.html";
+          }
+    </script>
+
     <style type="text/css">
         *{
             font-family: Roboto;
             color: #282828;
+        }
+
+        body{
+            height: 100vh !important;
         }
 
 
@@ -67,15 +77,16 @@
 
                
                 .textblock{
-                    height: 30vh;
-                    padding-top: 10vh;
+                    height: 25vh;
+                    padding-top: 5vh;
                 }
 
                 .heightx{
                     display: flex !important;
                     align-items: center;
                     justify-content: center;
-                    height: 60vh;
+                    height: 55vh;
+                    padding-top: 50px;
                 }
 
                 .datum,.zeit,.ort,.datumtext,.zeittext,.orttext{
@@ -88,16 +99,41 @@
                 }
 
                 .kalender, .clock, .ortbild{
-                    width: 50%;
-                    height: 50%;
+                    width: 40%;
+                    height: 40%;
                     margin-top: 20px;
 
                 }
 
                 .ortbild{
-                    height: 60%;
-                    width: 60%;
+                    height: 50%;
+                    width: 50%;
                 }
+
+                @media(max-width: 1366px){
+                    .heightx{
+                        margin-top: 5vh;
+                    }
+                }
+
+                @media(max-width: 1180px){
+                    .textblock{
+                        margin-left: 5vw;
+                        margin-right: 5vw;
+                    }
+                }
+
+                @media(max-width: 1066px){
+                    .heightx{
+                        margin-top: 8vh;
+                    }
+
+                    .header,.datum, .zeit,.ort{
+                        font-size: 22pt;
+                    }
+                }
+
+
 
                
 
@@ -124,7 +160,7 @@
                         <ul class="vertical medium-horizontal menu">
                             <li><a href="info.html">INFO</a></li>
                             <li><a href="comingsoon.html">FOTOS</a></li>
-                            <li><a href="login.php">ANMELDUNG</a></li>
+                            <li><a href="login.php">LOGIN</a></li>
                         </ul>
                     </div>
                 </div>
@@ -134,28 +170,32 @@
                     <div class="textblock">
                         <h1 class="header"> Information </h1>
                         <p class="text"> 
-                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                            
+                            Nachdem die m&uuml;ndliche Matura vorbei ist, treffen wir uns alle bei der Eventlocation. Anfangs wird es einen Sektempfang geben, der &uuml;bergeht zur Zeugnisvergabe. Nach einer Ansprache des Direktors/Abteilungsvorstandes werden die besten Sch&uuml;ler geehrt, bevor das gemeinsame Essen beginnt. W&auml;hrend dem Essen wird es kleine Einlagen wie einen „Lehrer-Award“ geben, die die besten Lehrer bestimmen soll. Zum Schluss lassen wir alle zusammen den Abend bei Musik und gen&uuml;gend zu Trinken ausklingen.<br>
+                            Um genau zu ermitteln wie viele Personen kommen werden, ist eine Anmeldung auf dieser Seite eingebunden, die gleichzeitig abfragt, wie viele Personen dich begleiten werden. Bitte f&uuml;lle diese Anmeldung so bald wie m&ouml;glich aus!
+                            Nach der Maturafeier wird die Webseite dafür genutzt, die entstandenen Fotos der Abschlussfeier zu zeigen, damit man in Erinnerungen schwelgen kann. 
+
                         </p>
                     </div>                        
                 
                     <div class="grid-x heightx">
 
-                        <div class="cell large-4">
+                        <div class="cell large-4 small-4">
                             <h1 class="datum"> Datum </h1>
                             <img src="img/kalender.png" class="kalender float-center">
                             <p class="datumtext">08.06.2018</p>
                         </div>
 
-                        <div class="cell large-4">
+                        <div class="cell large-4 small-4">
                             <h1 class="zeit"> Zeit </h1>
                             <img src="img/clock.jpg" class="clock float-center">
                             <p class="zeittext"> 18:00</p>
                         </div>
 
-                        <div class="cell large-4">
+                        <div class="cell large-4 small-4">
                             <h1 class="ort"> Ort</h1>
                             <img src="img/ort.png" class="ortbild float-center">
-                            <p class="orttext">Babenbergerstra&szlig;e 3, 1230 Wien </p>
+                            <p class="orttext">Ge&szlig;lgasse 4, 1230 Wien </p>
                         </div>
                     </div>
 

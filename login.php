@@ -1,5 +1,6 @@
 <?php
 session_start();
+
 $pdo = new PDO('mysql:host=localhost;dbname=itp_mtf18', 'root', '');
 if(isset($_GET['login'])) {
  $benutzer = $_POST['benutzer'];
@@ -204,7 +205,7 @@ if(isset($_GET['login'])) {
           <ul class="vertical medium-horizontal menu">
             <li><a href="info.html">INFO</a></li>
             <li><a href="comingsoon.html">FOTOS</a></li>
-            <li><a href="login.php">ANMELDUNG</a></li>
+            <li><a href="login.php">LOGIN</a></li>
           </ul>
         </div>
       </div>

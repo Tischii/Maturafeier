@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Maturafeier | Info </title>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="icons/foundation-icons.css" />
+    <link rel="stylesheet" href="css/app.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bungee|Pacifico|Sedgwick+Ave+Display" rel="stylesheet">
+
+    <style type="text/css">
+     *{
+            font-family: Roboto;
+            color: #282828;
+        }
+
+        body{
+            height: 100vh !important;
+        }
+
+
+      
+
+                .top-bar-right{
+                    margin-right: 50px;
+                }
+
+                .top-bar ul li a{
+                    font-size: 16pt;
+                    letter-spacing: 4px;
+                    color: #fff;
+
+                }
+
+                .top-bar, .top-bar ul li a{
+                    background-color: #282828;
+                }
+
+                .top-bar ul li a:hover{
+                    color: #52CBD8;
+                }
+
+
+
+                .vertical medium-horizontal menu{
+                    background-color: #282828;
+                }
+
+                .logo{
+                    margin-left: 50px;
+                    display: flex;
+                    align-items: center;
+                }
+
+                .logo_img{
+                    height: 8vh;
+                }
+
+                .title-bar{
+                    background-color: #282828;
+                }
+
+                .fixed{
+                    height: 10vh;
+                    background-color: #282828;
+                }
+
+                .textblock{
+                    height: 60vh;
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    align-items: center;
+                    margin-left: 5%;
+                    margin-right: 5%;
+                }
+
+                .text{
+                    font-size: 18pt;
+                }
+
+                .grid-x{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                
+                }
+
+                .kalender,.clock,.ort{
+                    margin-left: 5vw;
+                    margin-right: 5vw;
+                    width: 15vw;
+
+                    
+                }
+
+                @media(max-width: 824px, max-height: 667px){
+                    .textblock{
+                        margin-top: 20vh;
+                    }
+                }
+
+
+    </style>
+</head>
+<body>
+    <div class="fixed">
+                <div class="top-bar" data-topbar role="navigation">
+                    <div class="logo-wrapper">
+                        <div class="logo">
+                            <a href="index.html"><img class="logo_img" src="img/logo_white.png" ></a>
+                        </div>
+                    </div>
+
+                    
+            <div class="title-bar" data-responsive-toggle="resmenu" data-hide-for="medium">
+                        <button class="menu-icon" type="button" data-toggle="resmenu"></button>
+                        <div class="title-bar-title">Men&uuml; </div>
+                    </div>
+            <div class="top-bar-right" data-magellan  id="resmenu">
+                <ul class="vertical medium-horizontal menu">
+                    <li><a href="info.html">INFO</a></li>
+                    <li><a href="comingsoon.html">FOTOS</a></li>
+                    <li><a href="login.php">ANMELDUNG</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid-container">
+        <div class="textblock">
+            <h1 class="header"> Information </h1>
+                <p class="text"> 
+                       
+                    Nachdem die m&uuml;ndliche Matura vorbei ist, treffen wir uns alle bei der Eventlocation. Anfangs wird es einen Sektempfang geben, der &uuml;bergeht zur Zeugnisvergabe. Nach einer Ansprache des Direktors/Abteilungsvorstandes werden die besten Sch&uuml;ler geehrt, bevor das gemeinsame Essen beginnt. W&auml;hrend dem Essen wird es kleine Einlagen wie einen „Lehrer-Award“ geben, die die besten Lehrer bestimmen soll. Zum Schluss lassen wir alle zusammen den Abend bei Musik und gen&uuml;gend zu Trinken ausklingen.<br>
+                </p>
+        </div>
+
+        <div class="grid-x">
+            <div class="row">
+                <div class="large-4">
+                    <img src="img/kalender.png" class="kalender float-center">
+                </div>
+            </div>
+            <div class="row">
+                <div class="large-4">
+                    <img class="clock float-center" src="img/clock.jpg">
+                </div>
+            </div>
+            <div class="row">
+                <div class="large-4">
+                    <img class="ort float-center" src="img/ort.png">
+                </div>
+            </div>
+        </div>
+                                                              
+    </div>
+</body>
+</html>
